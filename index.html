@@ -1,0 +1,2404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  >
+
+  <meta
+    name="description"
+    content="전국 샵 파트너의 추천 코디를 보고, 참여런웨이와 실사형 모델로 나에게 맞는 스타일을 경험하는 모두의코디"
+  >
+
+  <title>모두의코디</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       모바일 앱 전체 영역
+  ====================================================== -->
+  <main id="app" class="mobile-app">
+
+
+    <!-- ===================================================
+         SCREEN 1
+         메인 홈
+    ==================================================== -->
+    <section id="screen-1" class="screen active-screen home-screen">
+
+      <header class="home-header">
+        <img
+          src="images/logo/moducodi-logo.png"
+          alt="모두의코디"
+          class="main-logo"
+        >
+
+        <button
+          type="button"
+          class="header-my-button"
+          data-go="16"
+          aria-label="마이페이지"
+        >
+          😊
+        </button>
+      </header>
+      <section class="home-hero">
+
+        <div class="hero-tv-frame">
+          <img
+            src="images/owners/main-owner.png"
+            alt="메인 샵 파트너 코디"
+            class="hero-tv-image"
+          >
+      
+          <div class="hero-tv-badges">
+            <span>👀 조회수 1.2k</span>
+            <span>♡ 좋아요 128</span>
+            <span>📍 청주</span>
+          </div>
+      
+          <div class="hero-live-comments">
+            <div>지유  이 코디 너무 깔끔해요 💗</div>
+            <div>민서  사장님 핏 참고하기 좋아요 👍</div>
+            <div>하은  청주 매장도 보고 싶어요 🔥</div>
+          </div>
+        </div>
+      
+        <div class="hero-small-copy">
+          <span class="hero-small-label">오늘의 코디 대표컷</span>
+      
+          <h1>나에게 딱 맞는 코디를 <strong>샵 파트너와 함께</strong></h1>
+      
+          <p>
+            전국 매장의 샵 코디를 보고<br>
+            실제 나와 가까운 모델로 입어보세요.
+          </p>
+        </div>
+      
+      </section>
+
+ 
+
+
+      <!-- 메인 핵심 메뉴 4개 -->
+      <section class="home-feature-section">
+
+        <div class="home-feature-grid">
+
+          <button
+            type="button"
+            class="home-feature-card seller-feature"
+            data-go="2"
+          >
+
+            <div class="feature-image-wrap">
+              <img
+                src="images/home/feature-heart.png"
+                alt="샵 파트너 추천코디"
+              >
+            </div>
+
+            <strong>샵 파트너 추천코디</strong>
+            <span>전국 셀러의 실제 착장 추천</span>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="home-feature-card runway-feature"
+            data-go="3"
+          >
+
+          <div class="feature-image-wrap runway-home-preview">
+
+            <img
+              id="home-runway-preview"
+              src="images/runway/runway-front.png"
+              alt="참여런웨이 자동 미리보기"
+            >
+          
+            <span class="mini-360-badge">
+              AUTO 360°
+            </span>
+          
+          </div>
+          
+          <div class="runway-card-copy">
+            <strong>참여런웨이</strong>
+            <span>구매 고객의 실제 코디 보기</span>
+          </div>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="home-feature-card model-feature"
+            data-go="6"
+          >
+
+            <div class="feature-image-wrap">
+              <img
+                src="images/home/feature-model.png"
+                alt="실사형 내 모델"
+              >
+            </div>
+
+            <strong>실사형 내 모델</strong>
+            <span>나와 가까운 모습으로 입어보기</span>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="home-feature-card closet-feature"
+            data-go="7"
+          >
+
+            <div class="feature-image-wrap">
+              <img
+                src="images/models/my-model-01.png"
+                alt="나만의 옷장"
+              >
+            </div>
+
+            <strong>나만의 옷장</strong>
+            <span>내 옷을 저장하고 바로 코디</span>
+
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- 지역 혜택 -->
+      <section class="home-reward-banner">
+
+        <div class="reward-icon">
+          🎁
+        </div>
+
+        <div>
+          <strong>우리 동네에서 더 특별하게</strong>
+
+          <p>
+            지역 매장 구매 시
+            <b>구매금액의 최대 5% 적립</b>
+          </p>
+        </div>
+
+        <button
+          type="button"
+          data-go="12"
+          class="reward-arrow"
+          aria-label="지역 혜택 보기"
+        >
+          ›
+        </button>
+
+      </section>
+
+
+      <button
+        type="button"
+        class="main-start-button"
+        data-go="2"
+      >
+        모두의코디 시작하기
+      </button>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 2
+         셀러 추천 코디
+    ==================================================== -->
+    <section id="screen-2" class="screen seller-feed-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="1"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            PARTNER STYLE
+          </span>
+
+          <h2>
+            셀러 추천 코디
+          </h2>
+        </div>
+
+        <button
+          type="button"
+          class="header-icon-button"
+          data-go="14"
+          aria-label="장바구니"
+        >
+          🛒
+        </button>
+
+      </header>
+
+<!-- 주요 메뉴 5개 -->
+<nav class="top-main-navigation" aria-label="주요 메뉴">
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="1"
+  >
+    <span>🏠</span>
+    <small>홈</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item active"
+    data-go="2"
+  >
+    <span>⭐</span>
+    <small>셀러추천</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="3"
+  >
+    <span>▶</span>
+    <small>참여런웨이</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="7"
+  >
+    <span>👗</span>
+    <small>나의옷장</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="16"
+  >
+    <span>😊</span>
+    <small>마이</small>
+  </button>
+
+</nav>
+      <!-- 권역 필터 -->
+      <div class="region-filter-scroll">
+
+        <button
+          type="button"
+          class="region-filter active"
+          data-region="전체"
+        >
+          전체
+        </button>
+
+        <button
+          type="button"
+          class="region-filter"
+          data-region="서울"
+        >
+          서울
+        </button>
+
+        <button
+          type="button"
+          class="region-filter"
+          data-region="수도권"
+        >
+          수도권
+        </button>
+
+        <button
+          type="button"
+          class="region-filter"
+          data-region="강원권"
+        >
+          강원권
+        </button>
+
+        <button
+          type="button"
+          class="region-filter"
+          data-region="충청권"
+        >
+          충청권
+        </button>
+
+        <button
+          type="button"
+          class="region-filter"
+          data-region="전라권"
+        >
+          전라권
+        </button>
+
+        <button
+          type="button"
+          class="region-filter"
+          data-region="경상권"
+        >
+          경상권
+        </button>
+
+        <button
+          type="button"
+          class="region-filter"
+          data-region="제주도"
+        >
+          제주도
+        </button>
+
+      </div>
+
+
+      <!-- 정렬 -->
+      <div class="sort-bar">
+
+        <button
+          type="button"
+          class="sort-button active"
+          data-sort="likes"
+        >
+          ❤️ 좋아요순
+        </button>
+
+        <button
+          type="button"
+          class="sort-button"
+          data-sort="views"
+        >
+          👀 조회수순
+        </button>
+
+        <button
+          type="button"
+          class="sort-button"
+          data-sort="distance"
+        >
+          📍 가까운순
+        </button>
+
+      </div>
+
+
+      <!-- stores.js로 10개 카드 생성 -->
+      <div
+        id="store-list"
+        class="store-feed"
+      >
+      </div>
+
+
+      <div class="feed-end-message">
+        <span>✨</span>
+        전국의 새로운 셀러 코디가 계속 추가됩니다
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 3
+         참여런웨이
+    ==================================================== -->
+    <section id="screen-3" class="screen runway-screen">
+
+      <header class="runway-top-header">
+
+        <div>
+          <span class="page-mini-title light">
+            CUSTOMER RUNWAY
+          </span>
+
+          <h2>
+            참여런웨이
+            
+          </h2>
+        </div>
+
+        <button
+          type="button"
+          class="runway-cart-button"
+          data-go="14"
+        >
+          🛒
+        </button>
+
+      </header>
+
+
+      <!--
+        runway.js의 데이터를 app.js에서
+        참여자별 쇼츠 카드로 자동 생성
+      -->
+        <!-- 주요 메뉴 5개 -->
+<nav
+class="top-main-navigation runway-top-main-navigation"
+aria-label="주요 메뉴"
+>
+
+<button
+  type="button"
+  class="top-main-nav-item"
+  data-go="1"
+>
+  <span>🏠</span>
+  <small>홈</small>
+</button>
+
+<button
+  type="button"
+  class="top-main-nav-item"
+  data-go="2"
+>
+  <span>⭐</span>
+  <small>셀러추천</small>
+</button>
+
+<button
+  type="button"
+  class="top-main-nav-item active"
+  data-go="3"
+>
+  <span>▶</span>
+  <small>참여런웨이</small>
+</button>
+
+<button
+  type="button"
+  class="top-main-nav-item"
+  data-go="7"
+>
+  <span>👗</span>
+  <small>나의옷장</small>
+</button>
+
+<button
+  type="button"
+  class="top-main-nav-item"
+  data-go="16"
+>
+  <span>😊</span>
+  <small>마이</small>
+</button>
+
+</nav>
+      <div
+        id="runway-feed"
+        class="runway-feed"
+      >
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 4
+         온라인 가상 매장
+    ==================================================== -->
+    <section id="screen-4" class="screen shop-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="2"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span id="shop-city-label" class="page-mini-title">
+            MODU CODI SHOP
+          </span>
+
+          <h2 id="shop-title">
+            온라인 매장
+          </h2>
+        </div>
+
+        <button
+          type="button"
+          class="header-icon-button"
+          data-go="14"
+        >
+          🛒
+        </button>
+
+      </header>
+
+
+      <section class="shop-intro-card">
+
+        <div>
+          <span id="shop-business-name">
+            모두의코디 파트너
+          </span>
+
+          <h3>
+            파트너가 직접 추천한 코디
+          </h3>
+
+          <p id="shop-description">
+            마음에 드는 상품을 눌러 자세히 확인해보세요.
+          </p>
+        </div>
+
+      </section>
+
+
+      <div
+        id="shop-product-list"
+        class="shop-product-grid"
+      >
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 5
+         상품 상세
+    ==================================================== -->
+    <section id="screen-5" class="screen product-detail-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="4"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            PRODUCT
+          </span>
+
+          <h2>
+            상품 상세
+          </h2>
+        </div>
+
+        <button
+          type="button"
+          class="header-icon-button"
+          data-go="14"
+        >
+          🛒
+        </button>
+
+      </header>
+
+
+      <div class="product-detail-content">
+
+        <img
+          id="detail-product-image"
+          src="images/runway/runway-item-01.png"
+          alt="선택 상품"
+          class="detail-product-image"
+        >
+
+        <div class="detail-product-info">
+
+          <span
+            id="detail-product-category"
+            class="product-category-pill"
+          >
+            상의
+          </span>
+
+          <h2 id="detail-product-name">
+            화이트 린넨 셔츠
+          </h2>
+
+          <div class="detail-price-area">
+
+            <!-- 할인 상품일 때만 app.js에서 표시 -->
+            <div
+              id="detail-discount-row"
+              class="detail-discount-row hidden"
+            >
+          
+              <span
+                id="detail-discount-rate"
+                class="detail-discount-rate"
+              >
+                20%
+              </span>
+          
+              <del
+                id="detail-original-price"
+                class="detail-original-price"
+              >
+                49,000원
+              </del>
+          
+            </div>
+          
+          
+            <!-- 실제 판매가 -->
+            <strong
+              id="detail-product-price"
+              class="detail-price"
+            >
+              39,200원
+            </strong>
+          
+          </div>
+          <p id="detail-product-description">
+            가볍고 깔끔하게 입기 좋은 데일리 상품입니다.
+          </p>
+
+        </div>
+
+
+        <div class="detail-action-buttons">
+
+          <button
+            type="button"
+            id="detail-tryon-button"
+            class="secondary-action-button"
+          >
+            내 모델에 입혀보기
+          </button>
+
+          <button
+            type="button"
+            id="detail-cart-button"
+            class="primary-action-button"
+          >
+            장바구니 담기
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 6
+         실사형 내 모델
+    ==================================================== -->
+    <section id="screen-6" class="screen model-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="1"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            MY REAL MODEL
+          </span>
+
+          <h2>
+            실사형 내 모델
+          </h2>
+        </div>
+
+        <button
+          type="button"
+          class="header-icon-button"
+          data-go="8"
+        >
+          ⚙️
+        </button>
+
+      </header>
+
+
+      <div class="model-preview-card">
+
+        <div class="model-stage">
+
+          <img
+            src="images/models/my-model-01.png"
+            alt="실사형 내 모델"
+            class="model-base-image"
+          >
+
+        </div>
+
+        <div class="model-message">
+          <span>✨</span>
+
+          <div>
+            <strong>나와 가까운 실사형 모델</strong>
+            <p>
+              옷장에서 옷을 선택하면 착장 모습을 바로 확인할 수 있어요.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <button
+        type="button"
+        class="primary-action-button wide"
+        data-go="7"
+      >
+        나만의 옷장에서 입혀보기
+      </button>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 7
+         나만의 옷장
+    ==================================================== -->
+    <section id="screen-7" class="screen closet-screen">
+
+      <header class="closet-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="1"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            MY CLOSET
+          </span>
+
+          <h2>
+            나만의 옷장
+          </h2>
+        </div>
+
+        <button
+          type="button"
+          class="closet-camera-button"
+          id="closet-add-photo-button"
+          aria-label="옷 사진 추가"
+        >
+          📷
+        </button>
+
+      </header>
+<!-- 주요 메뉴 5개 -->
+<nav
+  class="top-main-navigation"
+  aria-label="주요 메뉴"
+>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="1"
+  >
+    <span>🏠</span>
+    <small>홈</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="2"
+  >
+    <span>⭐</span>
+    <small>셀러추천</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="3"
+  >
+    <span>▶</span>
+    <small>참여런웨이</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item active"
+    data-go="7"
+  >
+    <span>👗</span>
+    <small>나의옷장</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="16"
+  >
+    <span>😊</span>
+    <small>마이</small>
+  </button>
+
+</nav>
+
+      <!-- 모델 -->
+      <section class="closet-model-section">
+
+        <div class="closet-model-stage">
+
+          <!-- 가장 아래 기본 모델 -->
+          <img
+            id="closet-base-model"
+            src="images/models/my-model-01.png"
+            alt="내 실사형 모델"
+            class="closet-layer closet-base-layer"
+          >
+
+          <!-- 레깅스 / 스타킹 -->
+          <img
+            id="closet-layer-leggings"
+            src=""
+            alt=""
+            class="closet-layer wearable-layer leggings-layer hidden"
+          >
+
+          <!-- 바지 / 치마 -->
+          <img
+            id="closet-layer-bottoms"
+            src=""
+            alt=""
+            class="closet-layer wearable-layer bottoms-layer hidden"
+          >
+
+          <!-- 상의 -->
+          <img
+            id="closet-layer-tops"
+            src=""
+            alt=""
+            class="closet-layer wearable-layer tops-layer hidden"
+          >
+
+          <!-- 아우터 -->
+          <img
+            id="closet-layer-outer"
+            src=""
+            alt=""
+            class="closet-layer wearable-layer outer-layer hidden"
+          >
+
+        </div>
+
+
+        <div class="closet-model-copy">
+
+          <span class="model-status-badge">
+            ✨ 실시간 코디
+          </span>
+
+          <h3>
+            옷을 눌러 입혀보세요
+          </h3>
+
+          <p>
+            선택한 옷이 내 실사형 모델에 바로 적용됩니다.
+          </p>
+
+
+          <button
+            type="button"
+            id="reset-outfit-button"
+            class="reset-outfit-button"
+          >
+            코디 초기화
+          </button>
+
+        </div>
+
+      </section>
+
+<!-- AI 가상피팅 무료 이용 현황 -->
+<section
+  id="tryon-usage-card"
+  class="tryon-usage-card"
+>
+  <div class="tryon-usage-head">
+
+    <div>
+      <span class="tryon-mini-label">
+        AI VIRTUAL TRY-ON
+      </span>
+
+      <strong>
+        이번 달 무료 가상피팅
+      </strong>
+    </div>
+
+    <div class="tryon-usage-count">
+      <b id="tryon-free-remaining">30</b>
+      <span>/ 30회</span>
+    </div>
+
+  </div>
+
+  <div class="tryon-progress">
+    <span
+      id="tryon-progress-bar"
+      style="width: 100%;"
+    ></span>
+  </div>
+
+  <p id="tryon-usage-message">
+    매월 가상피팅 30회를 무료로 이용할 수 있어요.
+  </p>
+</section>
+      <!-- 저장공간 안내 -->
+      <section class="closet-storage-summary">
+
+        <div>
+          <strong>
+            기본 저장공간 40장
+          </strong>
+
+          <span>
+            40 / 40 사용 중
+          </span>
+        </div>
+
+        <div class="storage-progress">
+          <span></span>
+        </div>
+
+        <p>
+          상의·아우터·레깅스/스타킹·바지/치마를
+          각각 기본 10장까지 저장할 수 있어요.
+        </p>
+
+      </section>
+
+
+      <!-- app.js가 4개 카테고리 생성 -->
+      <div
+        id="closet-category-container"
+        class="closet-category-container"
+      >
+      </div>
+
+
+      <!-- 실제 아래 스크롤 시 등장 -->
+      <section
+        id="closet-extra-storage"
+        class="closet-extra-storage"
+      >
+
+        <div class="extra-storage-icon">
+          ＋
+        </div>
+
+        <h3>
+          옷장을 더 넓혀볼까요?
+        </h3>
+
+        <p>
+          기본 저장공간 10개를 모두 사용했습니다.
+        </p>
+
+        <strong>
+          카테고리별 10장 추가 · 월 990원
+        </strong>
+
+        <button
+          type="button"
+          id="extra-storage-button"
+          class="extra-storage-button"
+        >
+          저장공간 10장 추가하기
+        </button>
+
+        <small>
+          MVP 시연용 요금 안내입니다.
+        </small>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 8
+         실사형 모델 만들기
+    ==================================================== -->
+    <section id="screen-8" class="screen create-model-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="6"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            CREATE MODEL
+          </span>
+
+          <h2>
+            내 모델 만들기
+          </h2>
+        </div>
+
+      </header>
+
+
+      <section class="simple-form-card">
+
+        <h3>
+          내 체형 정보
+        </h3>
+
+        <label>
+          키
+          <input
+            type="number"
+            id="model-height"
+            placeholder="예: 165"
+          >
+        </label>
+
+        <label>
+          어깨
+          <select id="model-shoulder">
+            <option value="보통">보통</option>
+            <option value="좁음">좁음</option>
+            <option value="넓음">넓음</option>
+          </select>
+        </label>
+
+        <label>
+          허리
+          <select id="model-waist">
+            <option value="보통">보통</option>
+            <option value="슬림">슬림</option>
+            <option value="볼륨">볼륨</option>
+          </select>
+        </label>
+
+        <label>
+          체형 특징
+          <textarea
+            id="model-feature"
+            placeholder="예: 어깨가 넓고 하체가 발달한 편"
+          ></textarea>
+        </label>
+
+
+        <button
+          type="button"
+          id="save-model-button"
+          class="primary-action-button wide"
+        >
+          모델 저장하기
+        </button>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 9
+         AI 상품 요약
+    ==================================================== -->
+    <section id="screen-9" class="screen ai-summary-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="4"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            AI SUMMARY
+          </span>
+
+          <h2>
+            상품 한눈에 보기
+          </h2>
+        </div>
+
+      </header>
+
+
+      <section class="ai-summary-card">
+
+        <span class="ai-badge">
+          AI 요약
+        </span>
+
+        <h3>
+          이 옷은 이런 분께 잘 어울려요
+        </h3>
+
+        <div class="ai-chip-grid">
+          <span>데일리</span>
+          <span>편안한 핏</span>
+          <span>레이어드</span>
+          <span>활용도 높음</span>
+        </div>
+
+        <p>
+          실제 서비스에서는 상품 이미지와 판매자 확인 정보를 바탕으로
+          소재·핏·스타일 정보를 더욱 정교하게 제공할 예정입니다.
+        </p>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 10
+         파트너 상품 등록
+    ==================================================== -->
+    <section id="screen-10" class="screen seller-upload-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="16"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            PARTNER
+          </span>
+
+          <h2>
+            상품 등록
+          </h2>
+        </div>
+
+      </header>
+
+      <section class="upload-card">
+
+        <!-- 상품 사진 -->
+        <div class="upload-icon">
+          📷
+        </div>
+      
+        <h3>
+          추천코디 상품 등록
+        </h3>
+      
+        <p>
+          샵 파트너가 직접 착용한 상품 사진과
+          판매 정보를 등록할 수 있어요.
+        </p>
+      
+      
+        <button
+          type="button"
+          id="seller-upload-button"
+          class="primary-action-button wide"
+        >
+          상품 사진 등록
+        </button>
+      
+      
+        <!-- 상품 정보 -->
+        <div class="partner-product-form">
+      
+          <label>
+            상품명
+      
+            <input
+              type="text"
+              id="partner-product-name"
+              placeholder="예: 베이지 데일리 블라우스"
+            >
+          </label>
+      
+      
+          <label>
+            정상가
+      
+            <div class="price-input-wrap">
+      
+              <input
+                type="number"
+                id="partner-original-price"
+                min="0"
+                step="100"
+                placeholder="예: 48000"
+              >
+      
+              <span>
+                원
+              </span>
+      
+            </div>
+          </label>
+      
+      
+          <label>
+            할인율
+      
+            <div class="price-input-wrap">
+      
+              <input
+                type="number"
+                id="partner-discount-rate"
+                min="0"
+                max="100"
+                value="0"
+                placeholder="0"
+              >
+      
+              <span>
+                %
+              </span>
+      
+            </div>
+          </label>
+      
+      
+          <!-- 자동 계산 판매가 -->
+          <div class="partner-sale-price-box">
+      
+            <span>
+              자동 계산 판매가
+            </span>
+      
+            <strong id="partner-sale-price">
+              0원
+            </strong>
+      
+            <small id="partner-discount-preview">
+              할인율을 입력하면 자동으로 계산됩니다.
+            </small>
+      
+          </div>
+      
+      
+          <button
+            type="button"
+            id="partner-product-save-button"
+            class="primary-action-button wide"
+          >
+            상품 저장하기
+          </button>
+      
+        </div>
+      
+      </section>
+
+    </section>
+
+
+    <!-- ===================================================
+         SCREEN 11
+         AI 자동 분류
+    ==================================================== -->
+    <section id="screen-11" class="screen auto-category-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="10"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            AUTO CLASSIFY
+          </span>
+
+          <h2>
+            자동 상품 정리
+          </h2>
+        </div>
+
+      </header>
+
+
+      <section class="classification-card">
+
+        <div class="classification-row">
+          <span>카테고리</span>
+          <strong>상의</strong>
+        </div>
+
+        <div class="classification-row">
+          <span>컬러</span>
+          <strong>화이트</strong>
+        </div>
+
+        <div class="classification-row">
+          <span>스타일</span>
+          <strong>데일리</strong>
+        </div>
+
+        <div class="classification-note">
+          자동 분류 결과는 파트너가 직접 수정·확정할 수 있습니다.
+        </div>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 12
+         지역 혜택
+    ==================================================== -->
+    <section id="screen-12" class="screen local-benefit-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="1"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            LOCAL BENEFIT
+          </span>
+
+          <h2>
+            우리 동네 혜택
+          </h2>
+        </div>
+
+      </header>
+
+
+      <section class="local-benefit-card">
+
+        <div class="benefit-big-icon">
+          🎁
+        </div>
+
+        <h2>
+          구매금액의<br>
+          <strong>최대 5% 적립</strong>
+        </h2>
+
+        <p>
+          모두의코디는 전국 서비스를 기본으로 하며,
+          지역 매장 구매에 추가 혜택을 연결하는 모델을 목표로 합니다.
+        </p>
+
+        <small>
+          실제 혜택률과 적용 방식은 제휴 및 운영 정책에 따라 달라질 수 있습니다.
+        </small>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 13
+         파트너 입점
+    ==================================================== -->
+    <section id="screen-13" class="screen partner-support-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="16"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            PARTNER SUPPORT
+          </span>
+
+          <h2>
+            샵 파트너 시작하기
+          </h2>
+        </div>
+
+      </header>
+
+
+      <section class="support-card">
+
+        <span>
+          🏪
+        </span>
+
+        <h3>
+          작은 매장도 온라인 가상매장으로
+        </h3>
+
+        <p>
+          코디 사진과 상품을 등록하면
+          전국 고객에게 내 매장의 스타일을 소개할 수 있습니다.
+        </p>
+
+        <button
+          type="button"
+          class="primary-action-button wide"
+          data-go="10"
+        >
+          상품 등록 체험하기
+        </button>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 14
+         장바구니
+    ==================================================== -->
+    <section id="screen-14" class="screen cart-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="1"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            CART
+          </span>
+
+          <h2>
+            장바구니
+          </h2>
+        </div>
+
+      </header>
+
+
+      <div
+        id="cart-list"
+        class="cart-list"
+      >
+      </div>
+
+
+      <section class="cart-summary">
+
+        <div>
+          <span>상품금액</span>
+          <strong id="cart-subtotal">
+            0원
+          </strong>
+        </div>
+
+        <div>
+          <span>예상 최대 적립</span>
+          <strong id="cart-reward">
+            0원
+          </strong>
+        </div>
+
+        <div class="cart-total-row">
+          <span>결제예정금액</span>
+          <strong id="cart-total">
+            0원
+          </strong>
+        </div>
+
+        <button
+          type="button"
+          class="primary-action-button wide"
+          data-go="15"
+        >
+          주문하기
+        </button>
+
+      </section>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SCREEN 15
+         주문 / 배송
+    ==================================================== -->
+    <section id="screen-15" class="screen order-screen">
+
+      <header class="page-header">
+
+        <button
+          type="button"
+          class="back-button"
+          data-go="14"
+        >
+          ‹
+        </button>
+
+        <div>
+          <span class="page-mini-title">
+            ORDER
+          </span>
+
+          <h2>
+            주문하기
+          </h2>
+        </div>
+
+      </header>
+
+
+      <section class="order-card">
+
+        <h3>
+          배송 정보
+        </h3>
+
+        <label>
+          받는 분
+          <input
+            type="text"
+            placeholder="이름"
+          >
+        </label>
+
+        <label>
+          연락처
+          <input
+            type="tel"
+            placeholder="010-0000-0000"
+          >
+        </label>
+
+        <label>
+          배송지
+          <input
+            type="text"
+            placeholder="주소를 입력해주세요"
+          >
+        </label>
+
+
+        <button
+          type="button"
+          id="demo-payment-button"
+          class="primary-action-button wide"
+        >
+          주문 완료하기
+        </button>
+
+      </section>
+
+    </section>
+
+<!-- ===================================================
+     SCREEN 16
+     마이페이지
+     가입 시 선택한 회원 유형에 따라
+     개인회원 / 샵 파트너 화면 중 하나만 표시
+==================================================== -->
+<section id="screen-16" class="screen my-screen">
+
+  <header class="page-header">
+
+    <button
+      type="button"
+      class="back-button"
+      data-go="1"
+    >
+      ‹
+    </button>
+
+    <div>
+      <span class="page-mini-title">
+        MY MODU CODI
+      </span>
+
+      <h2>
+        마이
+      </h2>
+    </div>
+
+  </header>
+
+<!-- 주요 메뉴 5개 -->
+<nav
+  class="top-main-navigation"
+  aria-label="주요 메뉴"
+>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="1"
+  >
+    <span>🏠</span>
+    <small>홈</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="2"
+  >
+    <span>⭐</span>
+    <small>셀러추천</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="3"
+  >
+    <span>▶</span>
+    <small>참여런웨이</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item"
+    data-go="7"
+  >
+    <span>👗</span>
+    <small>나의옷장</small>
+  </button>
+
+  <button
+    type="button"
+    class="top-main-nav-item active"
+    data-go="16"
+  >
+    <span>😊</span>
+    <small>마이</small>
+  </button>
+
+</nav>
+  <!-- =================================================
+       개인회원 마이페이지
+  ================================================== -->
+  <div
+    id="individual-my-panel"
+    class="my-role-panel"
+  >
+
+    <section class="my-profile-card">
+
+      <div class="profile-avatar">
+        😊
+      </div>
+
+      <div>
+        <span class="my-role-badge">
+          개인회원
+        </span>
+
+        <strong>
+          모두의코디 사용자
+        </strong>
+
+        <p>
+          나에게 맞는 코디와 혜택을 관리해보세요.
+        </p>
+      </div>
+
+    </section>
+
+
+    <div class="my-menu-list">
+
+      <button
+        type="button"
+        data-go="6"
+      >
+        <span>👤 실사형 내 모델</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        data-go="7"
+      >
+        <span>👗 나만의 옷장</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        data-go="3"
+      >
+        <span>🎬 참여런웨이</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        data-go="14"
+      >
+        <span>🛒 장바구니</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        class="my-demo-menu"
+      >
+        <span>📦 주문 내역</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        data-go="12"
+      >
+        <span>🎁 혜택 · 적립</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        class="my-demo-menu"
+      >
+        <span>⚙️ 계정 설정</span>
+        <b>›</b>
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =================================================
+       샵 파트너 마이페이지
+       기본은 숨김
+       app.js에서 회원 유형에 따라 표시
+  ================================================== -->
+  <div
+    id="partner-my-panel"
+    class="my-role-panel hidden"
+  >
+
+    <section class="my-profile-card partner-profile-card">
+
+      <div class="profile-avatar">
+        🏪
+      </div>
+
+      <div>
+        <span class="my-role-badge partner">
+          샵 파트너
+        </span>
+
+        <strong>
+          미씨클럽
+        </strong>
+
+        <p>
+          온라인 매장과 등록 상품을 관리해보세요.
+        </p>
+      </div>
+
+    </section>
+
+
+    <section class="partner-summary-card">
+
+      <div>
+        <span>
+          오늘 조회
+        </span>
+
+        <strong>
+          128
+        </strong>
+      </div>
+
+      <div>
+        <span>
+          등록 상품
+        </span>
+
+        <strong>
+          2
+        </strong>
+      </div>
+
+      <div>
+        <span>
+          주문
+        </span>
+
+        <strong>
+          3
+        </strong>
+      </div>
+
+    </section>
+
+
+    <div class="my-menu-list">
+
+      <button
+        type="button"
+        data-go="4"
+      >
+        <span>🏪 내 온라인 매장</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        data-go="10"
+      >
+        <span>👗 추천코디 등록</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        data-go="10"
+      >
+        <span>📦 상품 등록 · 관리</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        data-go="10"
+      >
+        <span>📸 착장 사진 등록</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        class="my-demo-menu"
+      >
+        <span>🧾 주문 · 문의 관리</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        class="my-demo-menu"
+      >
+        <span>💰 매출 · 정산</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        class="my-demo-menu"
+      >
+        <span>⚙️ 매장 정보 관리</span>
+        <b>›</b>
+      </button>
+
+
+      <button
+        type="button"
+        data-go="13"
+      >
+        <span>📖 샵 파트너 이용안내</span>
+        <b>›</b>
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================================================
+         공통 모달
+         장바구니 확인
+    ==================================================== -->
+    <div
+      id="cart-confirm-modal"
+      class="modal-overlay hidden"
+      aria-hidden="true"
+    >
+
+      <div class="modal-card">
+
+        <div class="modal-icon">
+          🛍️
+        </div>
+
+        <h3>
+          장바구니에 담으시겠습니까?
+        </h3>
+
+        <p id="cart-confirm-product-name">
+          선택한 상품
+        </p>
+
+
+        <div class="modal-actions">
+
+          <button
+            type="button"
+            id="cart-modal-cancel"
+            class="modal-cancel-button"
+          >
+            취소
+          </button>
+
+          <button
+            type="button"
+            id="cart-modal-confirm"
+            class="modal-confirm-button"
+          >
+            담기
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ===================================================
+         공통 모달
+         옷장 제목 수정
+    ==================================================== -->
+    <div
+      id="closet-title-modal"
+      class="modal-overlay hidden"
+      aria-hidden="true"
+    >
+
+      <div class="modal-card">
+
+        <div class="modal-icon">
+          ✏️
+        </div>
+
+        <h3>
+          제목 수정하기
+        </h3>
+
+        <input
+          type="text"
+          id="closet-title-input"
+          maxlength="30"
+          placeholder="옷 이름을 입력해주세요"
+        >
+
+
+        <div class="modal-actions">
+
+          <button
+            type="button"
+            id="closet-title-cancel"
+            class="modal-cancel-button"
+          >
+            취소
+          </button>
+
+          <button
+            type="button"
+            id="closet-title-save"
+            class="modal-confirm-button"
+          >
+            저장
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+<!-- ===================================================
+     공통 모달
+     AI 가상피팅 크레딧 충전
+==================================================== -->
+<div
+  id="tryon-credit-modal"
+  class="modal-overlay hidden"
+  aria-hidden="true"
+>
+
+  <div class="modal-card tryon-credit-card">
+
+    <div class="modal-icon">
+      ✨
+    </div>
+
+    <h3>
+      이번 달 무료 가상피팅을 모두 사용했어요
+    </h3>
+
+    <p>
+      계속 이용하려면 크레딧을 충전해주세요.
+    </p>
+
+    <div class="tryon-credit-info">
+
+      <strong>
+        100크레딧 · 10,000원
+      </strong>
+
+      <span>
+        가상피팅 1회당 3크레딧
+      </span>
+
+      <small>
+        최대 33회 추가 이용
+      </small>
+
+    </div>
+
+    <div class="modal-actions">
+
+      <button
+        type="button"
+        id="tryon-credit-later"
+        class="modal-cancel-button"
+      >
+        나중에 하기
+      </button>
+
+      <button
+        type="button"
+        id="tryon-credit-buy"
+        class="modal-confirm-button"
+      >
+        크레딧 충전하기
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+    <!-- ===================================================
+         공통 토스트 메시지
+    ==================================================== -->
+    <div
+      id="toast-message"
+      class="toast-message hidden"
+      role="status"
+      aria-live="polite"
+    >
+    </div>
+
+
+  </main>
+  <!-- ===================================================
+  첫 방문 회원가입 / 회원유형 선택
+==================================================== -->
+<div
+id="signup-intro-modal"
+class="modal-overlay signup-intro-modal hidden"
+aria-hidden="true"
+>
+
+<div class="signup-intro-card">
+
+ <!-- 닫기 -->
+ <button
+   type="button"
+   id="signup-close-button"
+   class="signup-close-button"
+   aria-label="회원가입 안내 닫기"
+ >
+   ×
+ </button>
+
+
+ <!-- 로고 -->
+ <img
+   src="images/logo/moducodi-logo.png"
+   alt="모두의코디"
+   class="signup-intro-logo"
+ >
+
+
+ <!-- 환영문구 -->
+ <h2>
+   모두의코디에<br>
+   오신 것을 <strong>환영해요</strong>
+ </h2>
+
+ <p class="signup-description">
+   간편하게 시작하고<br>
+   나에게 맞는 코디를 만나보세요.
+ </p>
+
+
+ <!-- 3초 가입 -->
+ <section class="quick-signup-area">
+
+   <h3>
+     <strong>3초 만에</strong> 가입하기 ✨
+   </h3>
+
+
+   <button
+     type="button"
+     id="quick-signup-naver"
+     class="quick-signup-button naver"
+   >
+     <span class="quick-signup-icon">N</span>
+
+     <b>
+       네이버로 시작하기
+     </b>
+
+     <span class="quick-signup-arrow">
+       ›
+     </span>
+   </button>
+
+
+   <button
+     type="button"
+     id="quick-signup-kakao"
+     class="quick-signup-button kakao"
+   >
+     <span class="quick-signup-icon">
+       💬
+     </span>
+
+     <b>
+       카카오로 시작하기
+     </b>
+
+     <span class="quick-signup-arrow">
+       ›
+     </span>
+   </button>
+
+ </section>
+
+
+ <!-- 구분선 -->
+ <div class="signup-divider">
+
+   <span>
+     ♥
+   </span>
+
+   <strong>
+     회원 유형 선택
+   </strong>
+
+ </div>
+
+
+ <p class="role-select-guide">
+   모두의코디를 어떻게 이용하시나요?
+ </p>
+
+
+ <!-- 회원 유형 -->
+ <div class="signup-role-buttons">
+
+
+   <!-- 개인회원 -->
+   <button
+     type="button"
+     id="signup-role-individual"
+     class="signup-role-button individual"
+     data-signup-role="individual"
+   >
+
+     <div class="signup-role-visual">
+       👩
+     </div>
+
+     <strong>
+       개인회원
+     </strong>
+
+     <span>
+       코디 · 가상피팅 · 옷장 이용
+     </span>
+
+     <div class="signup-role-enter">
+       ›
+     </div>
+
+   </button>
+
+
+   <!-- 샵 파트너 -->
+   <button
+     type="button"
+     id="signup-role-partner"
+     class="signup-role-button partner"
+     data-signup-role="partner"
+   >
+
+     <div class="signup-role-visual">
+       🏪
+     </div>
+
+     <strong>
+       샵 파트너
+     </strong>
+
+     <span>
+       상품 · 매장 · 주문 관리
+     </span>
+
+     <div class="signup-role-enter">
+       ›
+     </div>
+
+   </button>
+
+ </div>
+
+
+ <!-- 개인정보 안내 -->
+ <div class="signup-security-box">
+
+   <span>
+     🛡️
+   </span>
+
+   <p>
+     안전하고 간편한 인증으로<br>
+     소중한 정보를 보호해요.
+   </p>
+
+ </div>
+
+
+ <small class="signup-demo-note">
+   · 네이버·카카오 간편가입은 MVP 시연 화면입니다.
+ </small>
+
+</div>
+
+</div>
+
+
+  <!-- =====================================================
+       데이터 JS
+
+       순서 중요:
+       상품 → 매장 → 참여런웨이 → 옷장 → app.js
+  ====================================================== -->
+
+  <script src="data/products.js"></script>
+  <script src="data/stores.js"></script>
+  <script src="data/runway.js"></script>
+  <script src="data/closet.js"></script>
+
+  <script src="js/app.js"></script>
+  <script>
+    (function () {
+      const preview = document.getElementById("home-runway-preview");
+  
+      if (!preview) return;
+  
+      const frames = [
+        "images/runway/runway-front.png",
+        "images/runway/runway-right.png",
+        "images/runway/runway-back.png",
+        "images/runway/runway-left.png"
+      ];
+  
+      let currentFrame = 0;
+  
+      setInterval(function () {
+        preview.classList.add("home-runway-changing");
+  
+        setTimeout(function () {
+          currentFrame = (currentFrame + 1) % frames.length;
+          preview.src = frames[currentFrame];
+  
+          preview.classList.remove("home-runway-changing");
+        }, 150);
+  
+      }, 900);
+    })();
+  </script>
+</body>
+</html>
